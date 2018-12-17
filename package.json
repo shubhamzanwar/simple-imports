@@ -1,0 +1,44 @@
+{
+    "name": "simple-imports",
+    "displayName": "simple-imports",
+    "description": "Easy relative path generator for importing files",
+    "publisher": "Shubham Zanwar",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.sayHello"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.sayHello",
+                "title": "Hello World"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.sayHello",
+                "key": "ctrl+i ctrl+p",
+                "mac": "cmd+i cmd+p"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^8.10.25",
+        "eslint": "^4.11.0",
+        "jest": "^23.6.0",
+        "typescript": "^3.1.4",
+        "vscode": "^1.1.25"
+    }
+}
