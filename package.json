@@ -18,7 +18,7 @@
         "commands": [
             {
                 "command": "extension.simpleImport",
-                "title": "Hello World"
+                "title": "Simple Import"
             }
         ],
         "keybindings": [
@@ -37,7 +37,6 @@
         "@types/mocha": "^2.2.42",
         "@types/node": "^8.10.25",
         "eslint": "^4.11.0",
-        "jest": "^23.6.0",
         "typescript": "^3.1.4",
         "vscode": "^1.1.25"
     }
